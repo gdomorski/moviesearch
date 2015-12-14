@@ -15,11 +15,11 @@ var ReviewListView = Backbone.View.extend({
       });
     });
 
-    var $els = this.entries.map(function(entry) {
+    var $allReviews = this.entries.map(function(entry) {
       return entry.$el;
     });
 
-    this.$el.append($els);
+    this.$el.append($allReviews);
 
     return this;
   }

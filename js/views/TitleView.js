@@ -8,7 +8,7 @@ var TitleView = Backbone.View.extend({
 
   render: function() {
     this.$el.text('Movie Review Search Database');
-    return this;
+    return this
   }
 
 });
