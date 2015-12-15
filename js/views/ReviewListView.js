@@ -1,12 +1,11 @@
 var ReviewListView = Backbone.View.extend({
 
-  id: 'list',
-
   initialize: function() {
     this.listenTo(this.collection, 'add', this.render);
   },
 
   render: function() {
+
     this.$el.empty();
 
   	this.entries = this.collection.models.map(function(model) {

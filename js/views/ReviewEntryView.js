@@ -1,9 +1,7 @@
 var ReviewEntryView = Backbone.View.extend({
 
-  className: 'entry',
-
   template: _.template('<h1> <a href="<%= reviewLink %>"><%= headline %></a></h1><%= image %><p>Review by <%= byline %><p><%= summary %></p>'),
-
+  
   events: {
     'click': 'startSearch'
   },
@@ -26,7 +24,6 @@ var ReviewEntryView = Backbone.View.extend({
   },
 
   startSearch: function() {
-
     this.model.search();
 
   }

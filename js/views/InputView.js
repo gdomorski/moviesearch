@@ -16,10 +16,7 @@ var InputView = Backbone.View.extend({
   },
 
   makeEnterKeyWork: function(e) {
-
-    var isEnterKey = (e.which === 13);
-
-    if(isEnterKey) { 
+    if(e.keyCode === 13) { 
       $('.hideme').hide()
       this.collection.addReviewEntry(this.$el.val());
       this.resetInput();
